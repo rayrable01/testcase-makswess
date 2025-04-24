@@ -52,7 +52,6 @@ export default class Example extends PureComponent {
                 strokeWidth={3}
                 activeDot={{ r: 8 }}
                 dot={({ cx, cy, index }) => {
-                const item = result[index];
                 const offset = (index / totalPoints) * 100;
                 const color = offset <= offsetPV ? "#008000" : "#ff0000";
                 return <circle cx={cx} cy={cy} r={6} fill={color} />;
@@ -65,7 +64,6 @@ export default class Example extends PureComponent {
                 strokeWidth={3}
                 activeDot={{ r: 8 }}
                 dot={({ cx, cy, index }) => {
-                    const item = result[index];
                     const offset = (index / totalPoints) * 100;
                     const color = offset <= offsetUV ? "#0000ff" : "#ffa500";
                     return <circle cx={cx} cy={cy} r={6} fill={color} />;
